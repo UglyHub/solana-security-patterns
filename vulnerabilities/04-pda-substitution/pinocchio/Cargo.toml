@@ -1,0 +1,16 @@
+[package]
+name = "pda-substitution-pinocchio"
+version = "0.1.0"
+description = "Demonstrates PDA substitution vulnerability in Pinocchio"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "pda_substitution_pinocchio"
+
+[features]
+default = []
+bpf-entrypoint = []
+
+[dependencies]
+pinocchio = "0.10"
