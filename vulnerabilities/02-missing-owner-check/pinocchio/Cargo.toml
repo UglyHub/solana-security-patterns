@@ -1,0 +1,16 @@
+[package]
+name = "missing-owner-check-pinocchio"
+version = "0.1.0"
+description = "Demonstrates missing owner check vulnerability in Pinocchio"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "missing_owner_check_pinocchio"
+
+[features]
+default = []
+bpf-entrypoint = []
+
+[dependencies]
+pinocchio = "0.10"
