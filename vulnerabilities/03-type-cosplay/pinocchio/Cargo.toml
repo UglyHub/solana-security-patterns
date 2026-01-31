@@ -1,0 +1,16 @@
+[package]
+name = "type-cosplay-pinocchio"
+version = "0.1.0"
+description = "Demonstrates type cosplay vulnerability in Pinocchio"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "type_cosplay_pinocchio"
+
+[features]
+default = []
+bpf-entrypoint = []
+
+[dependencies]
+pinocchio = "0.10"
