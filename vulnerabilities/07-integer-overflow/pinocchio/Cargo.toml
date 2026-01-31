@@ -1,0 +1,16 @@
+[package]
+name = "integer-overflow-pinocchio"
+version = "0.1.0"
+description = "Demonstrates integer overflow vulnerability in Pinocchio"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "integer_overflow_pinocchio"
+
+[features]
+default = []
+bpf-entrypoint = []
+
+[dependencies]
+pinocchio = "0.10"
