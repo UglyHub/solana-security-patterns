@@ -1,0 +1,16 @@
+[package]
+name = "arbitrary-cpi-pinocchio"
+version = "0.1.0"
+description = "Demonstrates arbitrary CPI vulnerability in Pinocchio"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "arbitrary_cpi_pinocchio"
+
+[features]
+default = []
+bpf-entrypoint = []
+
+[dependencies]
+pinocchio = "0.10"
